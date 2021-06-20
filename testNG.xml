@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Flight booking" verbose="1" parallel="tests" thread-count="2">
+<listeners>
+    <listener class-name="com.wired.automation.extent.ExtentManager"></listener>
+</listeners>
+    <test name="Wired App Testing">
+        <parameter name="platformName" value="Android"/>
+        <classes>
+            <class name="com.wired.automation.tests.LandingPageTest"/>
+        </classes>
+    </test>
+    <!-- Enable it for parallel testing -->
+    <!--    <test name="Flight Booking firefox Test">
+            <parameter name="browser" value="firefox"/>
+            <classes>
+                <class name="com.instawork.orbitz.tests.FlightBookingTestCase"/>
+            </classes>
+        </test>-->
+
+</suite>

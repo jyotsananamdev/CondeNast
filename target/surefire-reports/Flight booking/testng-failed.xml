@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Flight booking]" parallel="tests">
+  <listeners>
+    <listener class-name="com.wired.automation.extent.ExtentManager"/>
+  </listeners>
+  <test thread-count="2" verbose="0" name="Wired App Testing(failed)" parallel="tests">
+    <parameter name="platformName" value="Android"/>
+    <classes>
+      <class name="com.wired.automation.tests.LandingPageTest">
+        <methods>
+          <include name="verrifyLandingPage"/>
+          <include name="startUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.wired.automation.tests.LandingPageTest -->
+    </classes>
+  </test> <!-- Wired App Testing(failed) -->
+</suite> <!-- Failed suite [Flight booking] -->

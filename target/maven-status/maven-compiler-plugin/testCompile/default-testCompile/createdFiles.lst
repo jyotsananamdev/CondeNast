@@ -1,0 +1,10 @@
+com/wired/automation/extent/ExtentManager.class
+com/wired/automation/driver/impl/AndroidDriverProvider.class
+com/wired/automation/driver/impl/IOSDriverProvider.class
+com/wired/automation/pages/LandingPage.class
+com/wired/automation/driver/AppiumSession.class
+com/wired/automation/tests/LandingPageTest.class
+com/wired/automation/UtilityMethods.class
+com/wired/automation/PreprocessorTest.class
+com/wired/automation/driver/DriverProvider.class
+com/wired/automation/BaseTest.class
