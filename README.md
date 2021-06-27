@@ -3,8 +3,10 @@
 
 src > test >
 
-**BaseTest :** Create object of all pages in this class and extend this from every test class
+**BaseTest :** Create object of all pages in this class and extend this from every test class.
+
 **UtilityMethods :** All common methods like senKeys, click, select are here. Add new common methods here if required.
+
 **PreprocessorTest :** This is where we are creating driver and closing driver also starting appium session here.
 
 **driver package :**
