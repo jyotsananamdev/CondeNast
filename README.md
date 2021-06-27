@@ -12,9 +12,10 @@ src > test >
 **driver package :**
 >>impl package (Add IOS implementation here)
 
-	>>> AndroidDriverProvider : Creating Adroid driver here with required desired capabilities.
+>>> AndroidDriverProvider : Creating Adroid driver here with required desired capabilities.
   
 >>AppiumSession: Starting and ending appium session here.
+
 >>DriverProvider(Interface) : For driver creation
 	
 **pages package : Add new pages under this package**
