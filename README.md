@@ -25,11 +25,14 @@ Supported Driver :
 Android
 
 Porject configurations and test data:
+
 It is maven based and TestNG integrated project.
 Go to testng.xml and add platform name
 
 Project Execution :
+
 'mvn clean install'
 
-Project reporting
+Project reporting :
+
 Go to targer/surefire-reports folder and open index.html, Extent.html in web browser.
