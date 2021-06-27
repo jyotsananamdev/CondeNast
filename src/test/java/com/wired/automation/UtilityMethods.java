@@ -1,20 +1,22 @@
 package com.wired.automation;
 
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.List;
 
 public class UtilityMethods extends PreprocessorTest {
-    WebDriverWait wait= null;
+
     /*Method used to click on element by-
      * pass by(arg) */
     public void click(By by)
     {
-        waitForElementToBeClickable(by, 30);
         getDriver().findElement(by).click();
+    }
+    public String pageSource()
+    {
+        return getDriver().getPageSource();
     }
 
     /*Method used to click on element by-
@@ -27,22 +29,7 @@ public class UtilityMethods extends PreprocessorTest {
     /*Method used to sendKeys on element*/
     public void sendKeys(By by,String inputText)
     {
-        waitForElementToBeVisible(by, 30);
         find(by).sendKeys(inputText);
-    }
-
-    /*Method used to wait for Webelement to be visible*/
-    public void waitForElementToBeVisible(By by, long sec)
-    {
-        wait = new WebDriverWait(getDriver(), sec);
-        wait.until(ExpectedConditions.visibilityOf(find(by)));
-    }
-
-    /*Method used to wait for Webelement to be clickable*/
-    public void waitForElementToBeClickable(By by, long sec)
-    {
-        wait = new WebDriverWait(getDriver(), sec);
-        wait.until(ExpectedConditions.visibilityOf(find(by)));
     }
 
     /*Method used to verify Webelement is present on the page or not*/
@@ -73,14 +60,27 @@ public class UtilityMethods extends PreprocessorTest {
     /*Method used to get text of webelement*/
     public String getText(By by)
     {
-        waitForElementToBeVisible(by, 20);
         return find(by).getText();
     }
 
     /*Method used to get value of webelement*/
     public String getValue(By by)
     {
-        waitForElementToBeVisible(by, 20);
         return find(by).getAttribute("value");
+    }
+
+    /*Method to click on android back button*/
+    public void androidBack()
+    {
+        getDriver().pressKey(new KeyEvent().withKey(AndroidKey.BACK));
+    }
+
+    public void sleep(int no)
+    {
+        try {
+            Thread.sleep(1000*no);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -7,15 +7,9 @@
     <test name="Wired App Testing">
         <parameter name="platformName" value="Android"/>
         <classes>
-            <class name="com.wired.automation.tests.LandingPageTest"/>
+            <class name="com.wired.automation.tests.CommonTest"/>
         </classes>
     </test>
-    <!-- Enable it for parallel testing -->
-    <!--    <test name="Flight Booking firefox Test">
-            <parameter name="browser" value="firefox"/>
-            <classes>
-                <class name="com.instawork.orbitz.tests.FlightBookingTestCase"/>
-            </classes>
-        </test>-->
+
 
 </suite>

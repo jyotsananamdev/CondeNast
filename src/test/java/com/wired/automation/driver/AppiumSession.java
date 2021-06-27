@@ -15,8 +15,8 @@ public class AppiumSession {
 
         //Build the Appium service
         builder = new AppiumServiceBuilder();
-        builder.withIPAddress("127.0.0.1");
-        builder.usingPort(4723);
+        builder.withIPAddress("0.0.0.0");
+        builder.usingPort(4725);
         builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
         builder.withArgument(GeneralServerFlag.LOG_LEVEL,"error");
         builder.usingDriverExecutable(new File("/usr/local/bin/node"));

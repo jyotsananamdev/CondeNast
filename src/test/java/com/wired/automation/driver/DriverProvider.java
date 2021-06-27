@@ -1,8 +1,9 @@
 package com.wired.automation.driver;
 
-import org.openqa.selenium.WebDriver;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
 
 public interface DriverProvider {
 
-    public WebDriver createAppiumDriver();
+    public AndroidDriver createAppiumDriver();
 }

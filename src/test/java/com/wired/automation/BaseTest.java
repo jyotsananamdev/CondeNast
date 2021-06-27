@@ -1,9 +1,8 @@
 package com.wired.automation;
 
-import com.wired.automation.pages.LandingPage;
-import org.openqa.selenium.WebDriver;
+import com.wired.automation.pages.CommonPage;
 
-public class BaseTest extends  UtilityMethods{
-    //public UtilityMethods utilityMethods = new UtilityMethods();
-    public LandingPage lPage= new LandingPage();
+public class BaseTest extends  PreprocessorTest{
+
+    public CommonPage cPage= new CommonPage();
 }
